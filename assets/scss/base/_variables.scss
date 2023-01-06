@@ -1,0 +1,107 @@
+:root {
+    /* 
+      C O L O R S
+    */
+    --primary-color: #3975E5;
+    --secondary-color: #0B294B;
+    --terciary-color: #20C997;
+  
+    --feedback-good-color: #78D9BC;
+    --feedback-attention-color: #F6CE65;
+    --feedback-bad-color: #D76363;
+  
+    --neutral-low-color: #131418;
+    --neutral-low-light-color: #7C7C7C;
+    --neutral-low-medium-color: #616161;
+    --neutral-low-dark-color: #343435;
+  
+    --neutral-high-color: #C4C4C4;
+    --neutral-high-light-color: #F1F1F1;
+    --neutral-high-medium-color: #D8D8D8;
+    --neutral-high-dark-color: #BEBEBE;
+  
+    --white-color: #FFF;
+    --black-color: #000;
+  
+    /* 
+      F O N T   F A M I L Y
+    */
+    --font-family: brother-1816, sans-serif;
+  
+    /* 
+      F O N T   W E I G H T
+    */
+    --font-bold: 700;
+    --font-medium: 500;
+    --font-regular: 400;
+    --font-thin: 350;
+  
+    /* 
+      F O N T   S I Z E
+    */
+    --font-size-xxxs: 12px;
+    --font-size-xxs: 14px;
+    --font-size-xxs: 14px;
+    --font-size-xs: 16px;
+    --font-size-sm: 20px;
+    --font-size-md: 24px;
+    --font-size-lg: 32px;
+    --font-size-xl: 40px;
+    --font-size-xxl: 48px;
+    --font-size-xxxl: 64px;
+    --font-size-display: 80px;
+    --font-size-giant: 96px;
+    --font-size-enormous: 128px;
+  
+    /* 
+      L I N E   H E I G H T
+    */
+    --line-height-default: 100%;
+    --line-height-xs: 115%;
+    --line-height-sm: 120%;
+    --line-height-md: 133%;
+    --line-height-lg: 150%;
+    --line-height-xl: 170%;
+    --line-height-xxl: 200%;
+  
+    /* 
+      B O R D E R   R A D I U S
+    */
+    --border-radius-none: 0px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 24px;
+    --border-radius-pill: 500px;
+  
+    /* 
+      B O R D E R   W I D T H
+    */
+    --border-width-none: 0px;
+    --border-width-hairline: 1px;
+    --border-width-thin: 2px;
+    --border-width-thick: 4px;
+    --border-width-heavy: 8px;
+  
+    /* 
+      O P A C I T Y   L E V E L S
+    */
+    --opacity-semiopaque: .72;
+    --opacity-bold: .64;
+    --opacity-medium: .32;
+    --opacity-light: .16;
+    --opacity-transparent: .08;
+  
+    /* 
+      S H A D O W
+    */
+    --shadow-level-1: 0px 4px 8px;
+    --shadow-level-2: 0px 8px 24px;
+    --shadow-level-3: 0px 16px 32px;
+    --shadow-level-4: 0px 16px 48px;
+}
+
+// Pixels X REM
+$browser-context: 16;
+@function rem($pixels, $context: $browser-context) {
+    @return #{calc($pixels/$context)}rem;
+}

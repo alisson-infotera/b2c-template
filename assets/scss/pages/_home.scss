@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--font-family);
+  outline: none;
+  border: none;
+}
+
+body {
+  height: 100vh;
+}
+
+.motor-background {
+  background-color: var(--neutral-low-light-color);
+  height: 40vh;
+  position: relative;
+}
+
+header {
+  height: rem(100);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 rem(64);
+
+  .icon_container {
+    img {
+      height: rem(54);
+      width: rem(54);
+    }
+  }
+  
+  nav {
+    ul {
+      display: flex;
+      gap: rem(30);
+
+      li {
+        padding: rem(10);
+
+        a {
+          display: flex;
+          gap: rem(10);
+          color: var(--white-color);
+          gap: rem(10);
+          font-size: var(--font-size-xxs);
+          line-height: var(--line-height-sm);
+          font-weight: var(--font-bold);
+          transition: .4s;
+
+          &:hover {
+            opacity: var(--opacity-semiopaque);
+          }
+        }
+      }
+    }
+  } 
+}
+
+.motor_search {
+  background-color: var(--white-color);
+  width: 90%;
+  margin: 0 auto;
+  border-radius: var(--border-radius-sm);
+  padding: rem(20) rem(30);
+  border: solid var(--border-width-hairline) var(--neutral-high-dark-color);
+  position: absolute;
+  left: 5%;
+  top: 80%;
+
+  h2 {
+    font-weight: var(--font-bold);
+    font-size: var(--font-size-lg);
+  }
+
+  .search_options-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: rem(12);
+
+    .search_options {
+      display: flex;
+      gap: rem(5);
+      background-color: var(--neutral-high-medium-color);
+      width: fit-content;
+      border-radius: var(--border-radius-lg);
+      padding: rem(3);
+      justify-content: space-between;
+  
+      a {
+        display: flex;
+        gap: rem(5);
+        align-items: center;
+        padding: rem(8) rem(12);
+        background-color: transparent;
+        border-radius: var(--border-radius-lg);
+        font-size: var(--font-size-xxs);
+        font-weight: var(--font-bold);
+        color: var(--neutral-high-dark-color);
+        transition: .4s;
+        
+        &.current {
+          background-color: var(--white-color);
+          color: var(--black-color);
+        }
+  
+        &:hover {
+          background-color: var(--white-color);
+          color: var(--black-color);
+        }
+  
+        img {
+          width: rem(14);
+          height: rem(14);
+        }
+      }
+    }
+  }
+
+  .disclaimer-container {
+    display: flex;
+    margin: 24px 0 0 0;
+
+    img {
+      height: rem(35);
+      width: rem(35);
+    }
+  
+    p {
+      font-size: var(--font-size-xxs);
+      color: var(--neutral-high-dark-color);
+      line-height: var(--line-height-sm);
+      display: flex;
+      align-items: center;
+      gap: rem(5);
+    }
+  }
+}
+
+.search_fields-container {
+  background-color: var(--neutral-high-light-color);
+  height: rem(90);
+  width: 100%;
+  border-radius: var(--border-radius-lg);
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+
+  .input_field-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 rem(35);
+    position: relative;
+
+    input {
+      background-color: transparent;
+      padding: rem(10);
+
+      &::placeholder {
+        color: var(--neutral-low-medium-color);
+        font-size: var(--font-size-xs);
+      }
+    }
+  
+    .field_label-container {
+      display: flex;
+      gap: rem(5);
+  
+      img {
+        &.right-icon {
+          height: rem(16);
+          width: rem(16);
+          position: absolute;
+          right: rem(35);
+          top: rem(35);
+          cursor: pointer;
+        }
+      }
+
+      label {
+        font-size: var(--font-size-xxs);
+        color: var(--neutral-high-dark-color);
+        font-weight: var(--font-bold);
+        text-transform: uppercase;
+      }
+    }
+  }
+  
+  .motor_button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 rem(30);
+  
+    a {
+      background-color: var(--primary-color);
+      padding: rem(16) rem(24);
+      border-radius: var(--border-radius-sm);
+      display: flex;
+      gap: rem(5);
+      align-items: center;
+      color: var(--white-color);
+      font-weight: var(--font-bold);
+      text-transform: uppercase;
+      transition: .4s;
+      
+      &:hover {
+        opacity: var(--opacity-semiopaque);
+      }
+    }
+  }
+}
