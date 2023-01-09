@@ -115,6 +115,7 @@
       h1 {
         font-weight: var(--font-extrabold);
         font-size: var(--font-size-xxl);
+        color: var(--neutral-low-color);
       }
   
       .detail_description {
@@ -137,8 +138,8 @@
       gap: 16px;
       
       .type_room-image {
-        height: 200px;
-        width: 300px;
+        height: 270px;
+        width: 450px;
 
         img {
           width: 100%;
@@ -175,9 +176,11 @@
             flex-direction: column;
             gap: 20px;
             width: 60%;
+
             h3 {
               font-size: var(--font-size-md);
               font-weight: var(--font-bold);
+              color: var(--neutral-low-color);
             }
             .detail_description {
               font-size: var(--font-size-xxs);
@@ -310,6 +313,7 @@
     h3 {
       font-weight: var(--font-bold);
       font-size: var(--font-size-sm);
+      color: var(--neutral-low-color);
     }
 
     p {
