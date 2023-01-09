@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 :root {
     /* 
       C O L O R S
@@ -26,11 +27,12 @@
     /* 
       F O N T   F A M I L Y
     */
-    --font-family: brother-1816, sans-serif;
+    --font-family: 'Poppins', brother-1816, sans-serif;
   
     /* 
       F O N T   W E I G H T
     */
+    --font-extrabold: 800;
     --font-bold: 700;
     --font-medium: 500;
     --font-regular: 400;

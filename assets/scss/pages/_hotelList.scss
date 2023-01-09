@@ -8,16 +8,16 @@ body {
   .header_motor_search {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: rem(20);
     background-color: var(--neutral-high-light-color);
     border-radius: var(--border-radius-lg);
-    padding: 7px 20px;
+    padding: rem(7) rem(20);
 
     .input_field {
       display: flex;
       align-items: center;
-      gap: 5px;
-      width: 200px;
+      gap: rem(5);
+      width: rem(200);
       
       input {
         background-color: transparent;
@@ -31,7 +31,7 @@ body {
 
     button {
       background-color: var(--primary-color);
-      padding: 10px;
+      padding: rem(10);
       border-radius: var(--border-radius-sm);
     }
   }
@@ -42,14 +42,14 @@ body {
   margin: 0 auto;
 
   .title_container {
-    padding: 30px 0;
+    padding: rem(30) 0;
   }
 }
 
 .order_filters-container {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: rem(24);
   
   p {
     font-weight: var(--font-bold);
@@ -58,11 +58,11 @@ body {
 
   .order_filter_item-container {
     display: flex;
-    gap: 5px;
+    gap: rem(5);
     .order_filter_item {
       border: solid var(--border-width-hairline) var(--neutral-high-medium-color);
       border-radius: var(--border-radius-sm);
-      padding: 4px;
+      padding: rem(4);
       cursor: pointer;
       transition: .4s;
       
@@ -83,13 +83,13 @@ body {
 
 .container_content {
   display: flex;
-  gap: 60px;
+  gap: rem(60);
 
   .hotel_list-container {
-    margin-top: 50px;
+    margin-top: rem(50);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: rem(20);
     // background-color: var(--white-color);
     width: 70%;
     border-radius: var(--border-radius-sm);
@@ -99,8 +99,8 @@ body {
       grid-template-columns: 1fr 4fr;
   
       .image_hotel {
-        width: 400px;
-        height: 300px;
+        width: rem(400);
+        height: rem(300);
         border-radius: 0;
         background-color: var(--white-color);
          
@@ -112,7 +112,7 @@ body {
       }
 
       .card_body-container {
-        padding: 20px 30px;
+        padding: rem(20) rem(30);
         background-color: var(--white-color);
         border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
 
@@ -122,7 +122,7 @@ body {
 
           .label-container {
             background-color: var(--secondary-color);
-            padding: 5px 10px;
+            padding: rem(5) rem(10);
             border-radius: var(--border-radius-sm);
             p {
               &.label {
@@ -134,7 +134,7 @@ body {
 
           .assessment-container {
             background-color: var(--feedback-good-color);
-            padding: 5px 10px;
+            padding: rem(5) rem(10);
             border-radius: var(--border-radius-sm);
             p {
               color: var(--white-color);
@@ -150,14 +150,14 @@ body {
         }
 
         .card-content {
-          padding: 12px 0;
+          padding: rem(12) 0;
 
           h3 {
             font-size: var(--font-size-md);
           }
           
           p {
-            padding-top: 5px;
+            padding-top: rem(5);
             font-size: var(--font-size-xxxs);
             color: var(--neutral-low-light-color);
           }
@@ -165,16 +165,16 @@ body {
           .boardTypes-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            padding-top: 30px;
+            gap: rem(15);
+            padding-top: rem(30);
 
             .boardType-content {
               display: flex;
-              gap: 5px;
+              gap: rem(5);
               align-items: center;
               img {
-                height: 12px;
-                width: 12px;
+                height: rem(12);
+                width: rem(12);
               }
 
               p {
@@ -185,7 +185,7 @@ body {
           }
 
           .price_details-container {
-            padding-top: 15px;
+            padding-top: rem(15);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -202,7 +202,7 @@ body {
             }
 
             .discount-container {
-              padding: 5px 10px;
+              padding: rem(5) rem(10);
               text-align: center;
               background-color: var(--primary-color);
               border-radius: var(--border-radius-sm);
@@ -259,8 +259,8 @@ body {
       button {
         font-size: var(--font-size-xxs);
         background-color: transparent;
-        border-bottom: solid 1px var(--black-color);
-        padding: 0 5px;
+        border-bottom: solid rem(1) var(--black-color);
+        padding: 0 rem(5);
         color: var(--neutral-low-color);
       }
     }
@@ -269,30 +269,30 @@ body {
       h4 {
         color: var(--neutral-low-medium-color);
         font-weight: var(--font-bold);
-        letter-spacing: 1px;
+        letter-spacing: rem(1);
         text-transform: uppercase;
       }
 
       .graphic {
-        height: 150px;
+        height: rem(150);
         display: flex;
         justify-content: center;
       }
 
       .price_minmax-container {
-        padding: 10px 0;
+        padding: rem(10) 0;
         display: flex;
         justify-content: center;
-        gap: 50px;
+        gap: rem(50);
 
         .minmax_card {
           background-color: var(--white-color);
-          padding: 20px 30px;
+          padding: rem(20) rem(30);
           border-radius: var(--border-radius-sm);
-          border: 1px solid var(--neutral-high-medium-color);
+          border: rem(1) solid var(--neutral-high-medium-color);
           display: flex;
           flex-direction: column;
-          gap: 5px;
+          gap: rem(5);
 
           h4 {
             font-size: var(--font-size-xxxs);
@@ -306,8 +306,8 @@ body {
 
       .btns-container {
         button {
-          padding: 10px 15px;
-          border: solid 1px var(--neutral-high-medium-color);
+          padding: rem(10) rem(15);
+          border: solid rem(1) var(--neutral-high-medium-color);
           color: var(--neutral-high-medium-color);;
           border-radius: var(--border-radius-sm);
           font-size: var(--font-size-xxs);
@@ -316,10 +316,10 @@ body {
       }
 
       .filter_rooms-container, .filter_rating-container, .filter_flight_company-container {
-        padding-top: 50px;
+        padding-top: rem(50);
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: rem(15);
 
         
       }
@@ -328,11 +328,11 @@ body {
         .filter_flight_company-content {
           display: flex;
           flex-direction: column;
-          gap: 25px;
+          gap: rem(25);
           .filter_flight_company-item {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: rem(10);
   
             p {
               color: var(--neutral-high-dark-color);
@@ -340,7 +340,7 @@ body {
             }
 
             .check {
-              padding: 0px;
+              padding: rem(0);
               border: 0;
               border-radius: var(--border-radius-sm);
               cursor: pointer;
