@@ -1,0 +1,18 @@
+.booking_success_message {
+  display: flex;
+  gap: 20px;
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-sm);
+  padding: 50px 100px;
+  width: fit-content;
+  height: fit-content;
+  // margin: 0 auto;
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.checkout_total_price-container {
+  
+}

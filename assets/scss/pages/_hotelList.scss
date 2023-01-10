@@ -28,12 +28,6 @@ body {
         }
       }
     }
-
-    button {
-      background-color: var(--primary-color);
-      padding: rem(10);
-      border-radius: var(--border-radius-sm);
-    }
   }
 }
 
@@ -59,6 +53,7 @@ body {
   .order_filter_item-container {
     display: flex;
     gap: rem(5);
+
     .order_filter_item {
       border: solid var(--border-width-hairline) var(--neutral-high-medium-color);
       border-radius: var(--border-radius-sm);
@@ -66,16 +61,21 @@ body {
       cursor: pointer;
       transition: .4s;
       
-      &:hover {
-        border-color: var(--black-color);
-        color: var(--black-color);
-      }
-      
       p {
         color: var(--neutral-high-medium-color);
         font-weight: var(--font-bold);
         font-size: var(--font-size-xxxs);
         text-transform: uppercase;
+        transition: .4s;
+      }
+
+      &:hover {
+        border-color: var(--black-color);
+        color: var(--black-color);
+
+        p {
+          color: var(--black-color);
+        }
       }
     }
   }
@@ -90,17 +90,17 @@ body {
     display: flex;
     flex-direction: column;
     gap: rem(20);
-    // background-color: var(--white-color);
     width: 70%;
     border-radius: var(--border-radius-sm);
-  
+    transition: .4s;
+
     .hotel_list-item {
       display: grid;
       grid-template-columns: 1fr 4fr;
   
       .image_hotel {
         width: rem(400);
-        height: rem(300);
+        height: 100%;
         border-radius: 0;
         background-color: var(--white-color);
          
@@ -239,6 +239,10 @@ body {
           }
         }
       }
+
+      // &:hover {
+      //   opacity: var(--opacity-semiopaque);
+      // }
     }
   }
   
@@ -250,18 +254,11 @@ body {
       padding: 0 0 rem(30) 0;
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
       h3 {
-          font-size: var(--font-size-md);
-          font-weight: var(--font-bold);
-      }
-
-      button {
-        font-size: var(--font-size-xxs);
-        background-color: transparent;
-        border-bottom: solid rem(1) var(--black-color);
-        padding: 0 rem(5);
-        color: var(--neutral-low-color);
+        font-size: var(--font-size-md);
+        font-weight: var(--font-bold);
       }
     }
 
@@ -289,30 +286,36 @@ body {
           background-color: var(--white-color);
           padding: rem(20) rem(30);
           border-radius: var(--border-radius-sm);
-          border: rem(1) solid var(--neutral-high-medium-color);
+          border: rem(2) solid var(--neutral-high-medium-color);
           display: flex;
           flex-direction: column;
           gap: rem(5);
+          cursor: pointer;
+          transition: .4s;
 
           h4 {
             font-size: var(--font-size-xxxs);
+            transition: .4s;
           }
 
           p {
             color: var(--neutral-high-dark-color);
+            transition: .4s;
+          }
+
+          &:hover {
+            border-color: var(--secondary-color);
+
+            h4, p {
+              color: var(--secondary-color);
+            }
           }
         }
       }
 
       .btns-container {
-        button {
-          padding: rem(10) rem(15);
-          border: solid rem(1) var(--neutral-high-medium-color);
-          color: var(--neutral-high-medium-color);;
-          border-radius: var(--border-radius-sm);
-          font-size: var(--font-size-xxs);
-          font-weight: var(--font-bold);
-        }
+        display: flex;
+        gap: 5px;
       }
 
       .filter_rooms-container, .filter_rating-container, .filter_flight_company-container {
@@ -320,8 +323,6 @@ body {
         display: flex;
         flex-direction: column;
         gap: rem(15);
-
-        
       }
 
       .filter_flight_company-container {
@@ -329,10 +330,12 @@ body {
           display: flex;
           flex-direction: column;
           gap: rem(25);
+
           .filter_flight_company-item {
             display: flex;
             align-items: center;
             gap: rem(10);
+            cursor: pointer;
   
             p {
               color: var(--neutral-high-dark-color);

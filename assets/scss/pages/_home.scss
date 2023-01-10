@@ -124,7 +124,7 @@ header {
 
   .disclaimer-container {
     display: flex;
-    margin: 24px 0 0 0;
+    margin: rem(24) 0 0 0;
 
     img {
       height: rem(35);
@@ -196,22 +196,5 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 0 rem(30);
-  
-    a {
-      background-color: var(--primary-color);
-      padding: rem(16) rem(24);
-      border-radius: var(--border-radius-sm);
-      display: flex;
-      gap: rem(5);
-      align-items: center;
-      color: var(--white-color);
-      font-weight: var(--font-bold);
-      text-transform: uppercase;
-      transition: .4s;
-      
-      &:hover {
-        opacity: var(--opacity-semiopaque);
-      }
-    }
   }
 }
