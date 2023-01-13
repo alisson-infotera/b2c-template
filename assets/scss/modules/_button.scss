@@ -74,6 +74,24 @@ Button
     border: none;
   }
 
+  &.btn-letter-spacing {
+    letter-spacing: 1px;
+    font-weight: var(--font-medium);
+  }
+
+  &.button_continue_checkout {
+    display: flex;
+    width: 100%;
+    border: 1px solid var(--neutral-low-color);
+    border-radius: var(--border-radius-sm);
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      font-weight: var(--font-bold);
+      border-width: 2px;
+    }
+  }
+
   &.btn-social-medias {
     padding: 10px 20px;
     width: 200px;

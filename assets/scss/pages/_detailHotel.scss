@@ -29,21 +29,26 @@
       background-color: var(--primary-color);
       padding: rem(10);
       border-radius: var(--border-radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
 
 .image-container {
-  padding: rem(30) 0;
+  padding: rem(30) 0 0 0;
+  width: 100%;
   display: grid;
-  grid-template-columns: 50% 25% 25%;
-  flex-wrap: wrap;
-  gap: rem(20);  
+  grid-template-columns: 50% 24% 24%;
+  gap: rem(16);  
 
   img {
     width: 100%;
     height: 100%;
     border-radius: var(--border-radius-sm);
+    background-size: cover;
+
     &:nth-child(1) {
       grid-row: 1 / 3;
     }
@@ -53,9 +58,10 @@
 .collumn {
   display: grid;
   grid-template-columns: 6fr 3fr;
-  gap: rem(35);
+  gap: rem(20);
   padding: rem(30) 0;
 }
+
 .hotel_detail-container {
   border-radius: var(--border-radius-sm);
   display: flex;
@@ -84,26 +90,26 @@
         }
       }
   
-      .evaluation_notes-container {
-        display: flex;
-        gap: rem(10);
-        align-items: center;
+      // .evaluation_notes-container {
+      //   display: flex;
+      //   gap: rem(10);
+      //   align-items: center;
   
-        p {
-          font-weight: var(--font-bold);
-          color: var(--neutral-low-medium-color);
+      //   p {
+      //     font-weight: var(--font-bold);
+      //     color: var(--neutral-low-medium-color);
   
-          &.label {
-            padding: rem(5) rem(10);
-            border-radius: var(--border-radius-sm);
-            background-color: var(--feedback-good-color);
-            color: var(--white-color);
-            font-weight: var(--font-bold);
-            text-align: center;
-            font-size: var(--font-size-md);
-          }
-        }
-      }
+      //     &.label {
+      //       padding: rem(5) rem(10);
+      //       border-radius: var(--border-radius-sm);
+      //       background-color: var(--feedback-good-color);
+      //       color: var(--white-color);
+      //       font-weight: var(--font-bold);
+      //       text-align: center;
+      //       font-size: var(--font-size-md);
+      //     }
+      //   }
+      // }
     }
   
     .detail_container {
@@ -149,20 +155,20 @@
 
       .type_room-details {
         
-        .card-boardType {
-          padding: rem(5) rem(10);
-          border-radius: var(--border-radius-sm);
-          background-color: var(--secondary-color);
-          width: fit-content;
+        // .card-boardType {
+        //   padding: rem(5) rem(10);
+        //   border-radius: var(--border-radius-sm);
+        //   background-color: var(--secondary-color);
+        //   width: fit-content;
 
-          p {
-            color: var(--white-color);
-            font-weight: var(--font-bold);
-            text-align: center;
-            text-transform: uppercase;
-            font-size: var(--font-size-xxxs);
-          }
-        }
+        //   p {
+        //     color: var(--white-color);
+        //     font-weight: var(--font-bold);
+        //     text-align: center;
+        //     text-transform: uppercase;
+        //     font-size: var(--font-size-xxxs);
+        //   }
+        // }
 
         .item_content-container {
           display: flex;
@@ -435,6 +441,42 @@
           color: var(--white-color);
         }
       }
+    }
+  }
+}
+
+.card-boardType {
+  padding: rem(5) rem(10);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--secondary-color);
+  width: fit-content;
+
+  p {
+    color: var(--white-color);
+    font-weight: var(--font-bold);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--font-size-xxxs);
+  }
+}
+
+.evaluation_notes-container {
+  display: flex;
+  gap: rem(10);
+  align-items: center;
+
+  p {
+    font-weight: var(--font-bold);
+    color: var(--neutral-low-medium-color);
+
+    &.label {
+      padding: rem(5) rem(10);
+      border-radius: var(--border-radius-sm);
+      background-color: var(--feedback-good-color);
+      color: var(--white-color);
+      font-weight: var(--font-bold);
+      text-align: center;
+      font-size: var(--font-size-md);
     }
   }
 }

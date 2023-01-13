@@ -79,8 +79,7 @@
     background-color: var(--neutral-high-light-color);
     border-radius: var(--border-radius-sm);
     padding: 20px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 5px;
     
     h4 {

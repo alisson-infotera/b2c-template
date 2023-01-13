@@ -37,6 +37,10 @@ body {
 
   .title_container {
     padding: rem(30) 0;
+
+    h1 {
+      font-weight: var(--font-extrabold);
+    }
   }
 }
 
@@ -83,14 +87,15 @@ body {
 
 .container_content {
   display: flex;
-  gap: rem(60);
+  // gap: rem(60);
+  justify-content: space-between;
 
   .hotel_list-container {
     margin-top: rem(50);
     display: flex;
     flex-direction: column;
     gap: rem(20);
-    width: 70%;
+    width: 75%;
     border-radius: var(--border-radius-sm);
     transition: .4s;
 
@@ -247,7 +252,7 @@ body {
   }
   
   .filters-container {
-    width: 40%;
+    width: 20%;
     padding: rem(50) 0;
 
     .filter_title-container {
@@ -280,11 +285,11 @@ body {
         padding: rem(10) 0;
         display: flex;
         justify-content: center;
-        gap: rem(50);
+        gap: rem(15);
 
         .minmax_card {
           background-color: var(--white-color);
-          padding: rem(20) rem(30);
+          padding: rem(20) rem(20);
           border-radius: var(--border-radius-sm);
           border: rem(2) solid var(--neutral-high-medium-color);
           display: flex;
