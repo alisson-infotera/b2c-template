@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 150px;
-  gap: 70px;
+  padding-top: rem(150);
+  gap: rem(70);
   
   .qrcode {
-    height: 135px;
-    width: 135px;
+    height: rem(135);
+    width: rem(135);
   }
 
   .qrcode_details {
@@ -18,7 +18,7 @@
     .qrcode_detail-item {
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: rem(5);
 
       p {
         font-size: var(--font-size-xs);

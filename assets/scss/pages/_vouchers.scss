@@ -1,5 +1,5 @@
 .title_container {
-  padding: 40px 0;
+  padding: rem(40) 0;
 
   h1 {
     font-weight: var(--font-extrabold);
@@ -9,31 +9,31 @@
 }
 
 .subtitle_container{
-  margin: 10px 0;
+  margin: rem(10) 0;
 
   h3 {
     font-weight: var(--font-bold);
     font-size: var(--font-size-xxs);
-    letter-spacing: 1px;
+    letter-spacing: rem(1);
     text-transform: uppercase;
     color: var(--neutral-low-light-color);
   }
 }
 
 .list_vouchers {
-  padding: 0 0 50px 0;
+  padding: 0 0 rem(50) 0;
 }
 
 .vouchers_list-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: rem(30);
 }
 
 .voucher_item {
   background-color: var(--white-color);
   display: flex;
-  gap: 20px;
+  gap: rem(20);
   border-radius: var(--border-radius-sm);
 
   .voucher_image-container {
@@ -52,11 +52,11 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 20px 30px 20px 0;
+    gap: rem(10);
+    padding: rem(20) rem(30) rem(20) 0;
     .content_item {
       display: flex;
-      gap: 5px;
+      gap: rem(5);
       align-items: center;
 
       p {
@@ -89,6 +89,6 @@
 .list_orders {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding-bottom: 30px;
+  gap: rem(20);
+  padding-bottom: rem(30);
 }

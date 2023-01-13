@@ -320,7 +320,7 @@ body {
 
       .btns-container {
         display: flex;
-        gap: 5px;
+        gap: rem(5);
       }
 
       .filter_rooms-container, .filter_rating-container, .filter_flight_company-container {

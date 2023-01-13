@@ -160,7 +160,7 @@ Button
   color: var(--white-color);
 }
 .btn.btn-border-bottom {
-  border-bottom: 1px solid var(--black-color);
+  border-bottom: 0.0625rem solid var(--black-color);
   border-radius: 0;
 }
 .btn.btn-action {
@@ -199,7 +199,7 @@ Button
   border: none;
 }
 .btn.btn-letter-spacing {
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   font-weight: var(--font-medium);
 }
 .btn.button_continue_checkout {
@@ -207,7 +207,7 @@ Button
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  border: 1px solid var(--neutral-low-color);
+  border: 0.0625rem solid var(--neutral-low-color);
   border-radius: var(--border-radius-sm);
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -218,13 +218,13 @@ Button
 }
 .btn.button_continue_checkout:hover {
   font-weight: var(--font-bold);
-  border-width: 2px;
+  border-width: 0.125rem;
 }
 .btn.btn-social-medias {
-  padding: 10px 20px;
-  width: 200px;
+  padding: 0.625rem 1.25rem;
+  width: 12.5rem;
   border-radius: 0;
-  height: 40px;
+  height: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,7 +234,7 @@ Button
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 5px;
+  gap: 0.3125rem;
   text-transform: capitalize;
   font-weight: var(--font-regular);
   font-size: var(--font-size-xxxs);
@@ -264,7 +264,7 @@ Button
 .btn.btn-social-medias.local_account-button {
   background-color: var(--white-color);
   color: var(--black-color);
-  border: solid 1px var(--black-color);
+  border: solid 0.0625rem var(--black-color);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -529,7 +529,7 @@ header nav ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .overlay_guests {
@@ -543,24 +543,24 @@ header nav ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 15px;
+  gap: 0.9375rem;
   position: absolute;
-  top: 100px;
-  right: 0px;
+  top: 6.25rem;
+  right: 0rem;
   z-index: 1000;
   background-color: var(--neutral-low-light-color);
   background-color: var(--white-color);
   border-radius: var(--border-radius-sm);
   width: 90%;
-  padding: 20px;
+  padding: 1.25rem;
 }
 .overlay_guests.active h4 {
   font-size: var(--font-size-xxs);
   color: var(--neutral-high-dark-color);
   font-weight: var(--font-bold);
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .overlay_guests.active h3 {
   font-size: var(--font-size-xs);
@@ -586,7 +586,7 @@ header nav ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
+  height: 3.75rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -597,14 +597,14 @@ header nav ul li a:hover {
 .overlay_guests.active .overlay_add_room-container button {
   height: 100%;
   background-color: transparent;
-  border: 2px solid var(--black-color);
+  border: 0.125rem solid var(--black-color);
   cursor: pointer;
   font-size: var(--font-size-xs);
   text-transform: uppercase;
-  padding: 10px;
+  padding: 0.625rem;
   font-weight: var(--font-medium);
   border-radius: var(--border-radius-sm);
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -615,7 +615,7 @@ header nav ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -630,7 +630,7 @@ header nav ul li a:hover {
 }
 .overlay_guests.active .overlay_buttons-container .overley_action_button {
   border-radius: 50%;
-  border: 2px solid var(--black-color);
+  border: 0.125rem solid var(--black-color);
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -641,7 +641,7 @@ header nav ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5px;
+  padding: 0.3125rem;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -973,7 +973,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 .container_content .filters-container .filters-content .filter_rooms-container, .container_content .filters-container .filters-content .filter_rating-container, .container_content .filters-container .filters-content .filter_flight_company-container {
   padding-top: 3.125rem;
@@ -1686,7 +1686,7 @@ body {
 }
 
 .payment_item-content {
-  padding: 0 0 0 10px;
+  padding: 0 0 0 0.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1694,23 +1694,23 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .payment_item-content .payment_item-field {
-  border: solid 1px var(--neutral-high-color);
+  border: solid 0.0625rem var(--neutral-high-color);
   border-radius: var(--border-radius-sm);
-  padding: 12px 20px;
+  padding: 0.75rem 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 15px;
+  gap: 0.9375rem;
 }
 .payment_item-content .payment_item-field img {
-  height: 20px;
-  width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 .payment_item-content .payment_item-field .input_field {
   display: -webkit-box;
@@ -1725,7 +1725,7 @@ body {
   font-size: var(--font-size-xxs);
   color: var(--neutral-low-light-color);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   font-weight: var(--font-bold);
 }
 .payment_item-content .payment_item-field .input_field input {
@@ -1739,23 +1739,23 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 12px 15px;
+  padding: 0.75rem 0.9375rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid var(--neutral-high-dark-color);
-  margin-bottom: 12px;
+  border-bottom: 0.0625rem solid var(--neutral-high-dark-color);
+  margin-bottom: 0.75rem;
 }
 
 .login_buttons-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 450px;
+  width: 28.125rem;
   margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.625rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1772,7 +1772,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .booking_item .booking_item-header {
   display: -webkit-box;
@@ -1781,11 +1781,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 .booking_item .booking_item-header p {
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   font-size: var(--font-size-xs);
   font-weight: var(--font-bold);
   color: var(--neutral-low-light-color);
@@ -1793,9 +1793,9 @@ body {
 .booking_item .booking_item-content {
   background-color: var(--neutral-high-light-color);
   border-radius: var(--border-radius-sm);
-  padding: 20px;
+  padding: 1.25rem;
   display: grid;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 .booking_item .booking_item-content h4 {
   color: var(--neutral-low-dark-color);
@@ -1809,11 +1809,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 .booking_item .booking_item-content .item_detail img {
-  width: 14px;
-  height: 14px;
+  width: 0.875rem;
+  height: 0.875rem;
 }
 .booking_item .booking_item-content .item_detail p {
   font-size: var(--font-size-xxxs);
@@ -1829,7 +1829,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 5px;
+  margin-top: 0.3125rem;
 }
 .booking_item .booking_item-footer .detail_price-container p {
   color: var(--neutral-high-dark-color);
@@ -1854,17 +1854,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .details_confirmation-container .booking_success_message {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   background-color: var(--white-color);
   border-radius: var(--border-radius-sm);
   width: 80%;
-  height: 150px;
+  height: 9.375rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1881,8 +1881,8 @@ body {
   font-size: var(--font-size-xxs);
 }
 .details_confirmation-container .booking_success_message img {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
 }
 .details_confirmation-container .booking_payment-item {
   display: -webkit-box;
@@ -1894,10 +1894,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
+  padding: 1.25rem;
 }
 .details_confirmation-container .booking_payment-item .form_payment {
-  width: 150px;
+  width: 9.375rem;
 }
 .details_confirmation-container .booking_payment-item .form_payment p {
   font-size: var(--font-size-xxs);
@@ -1914,17 +1914,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .details_confirmation-container .booking_payment-item .label_payment_item p {
   font-size: var(--font-size-xxs);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   font-weight: var(--font-medium);
 }
 .details_confirmation-container .booking_payment-item .label_payment_item img {
-  height: 20px;
-  width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
 .checkout_total_price-container {
@@ -1962,8 +1962,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
-  padding: 10px;
+  gap: 0.625rem;
+  padding: 0.625rem;
 }
 .service_item .service_item-content .card_description-container p {
   color: var(--neutral-low-medium-color);
@@ -1992,7 +1992,7 @@ body {
   font-size: var(--font-size-xs);
 }
 .service_item .service_item-content button {
-  border: 2px solid var(--neutral-low-color);
+  border: 0.125rem solid var(--neutral-low-color);
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2015,21 +2015,21 @@ body {
 .display {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .display .sidebar {
   position: relative;
-  top: 107px;
+  top: 6.6875rem;
 }
 
 .services-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .services_container .service_title-container {
-  padding: 30px 0;
+  padding: 1.875rem 0;
 }
 .services_container .service_title-container .service_title {
   font-size: var(--font-size-lg);
@@ -2044,8 +2044,8 @@ h1 {
 .user_items-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding-top: 20px;
+  gap: 0.625rem;
+  padding-top: 1.25rem;
 }
 .user_items-container .user_item {
   display: -webkit-box;
@@ -2061,9 +2061,9 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
   background-color: var(--white-color);
-  height: 150px;
+  height: 9.375rem;
   border-radius: var(--border-radius-sm);
   font-size: var(--font-size-sm);
   cursor: pointer;
@@ -2084,7 +2084,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 .sub-header .user p {
   color: var(--neutral-low-medium-color);
@@ -2093,7 +2093,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5px;
+  gap: 0.3125rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2103,7 +2103,7 @@ h1 {
 }
 
 .title_container {
-  padding: 40px 0;
+  padding: 2.5rem 0;
 }
 .title_container h1 {
   font-weight: var(--font-extrabold);
@@ -2112,24 +2112,24 @@ h1 {
 }
 
 .subtitle_container {
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }
 .subtitle_container h3 {
   font-weight: var(--font-bold);
   font-size: var(--font-size-xxs);
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   text-transform: uppercase;
   color: var(--neutral-low-light-color);
 }
 
 .list_vouchers {
-  padding: 0 0 50px 0;
+  padding: 0 0 3.125rem 0;
 }
 
 .vouchers_list-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .voucher_item {
@@ -2137,7 +2137,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   border-radius: var(--border-radius-sm);
 }
 .voucher_item .voucher_image-container {
@@ -2160,14 +2160,14 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
-  padding: 20px 30px 20px 0;
+  gap: 0.625rem;
+  padding: 1.25rem 1.875rem 1.25rem 0;
 }
 .voucher_item .voucher_detail-container .content_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5px;
+  gap: 0.3125rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2207,8 +2207,8 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
-  padding-bottom: 30px;
+  gap: 1.25rem;
+  padding-bottom: 1.875rem;
 }
 
 .qrcode_container {
@@ -2222,12 +2222,12 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 150px;
-  gap: 70px;
+  padding-top: 9.375rem;
+  gap: 4.375rem;
 }
 .qrcode_container .qrcode {
-  height: 135px;
-  width: 135px;
+  height: 8.4375rem;
+  width: 8.4375rem;
 }
 .qrcode_container .qrcode_details {
   display: -webkit-box;
@@ -2248,7 +2248,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 .qrcode_container .qrcode_details .qrcode_detail-item p {
   font-size: var(--font-size-xs);
@@ -2256,7 +2256,7 @@ h1 {
 }
 
 .title_container {
-  padding: 30px 0;
+  padding: 1.875rem 0;
 }
 .title_container h1 {
   font-weight: var(--font-extrabold);
@@ -2267,7 +2267,7 @@ h1 {
 .container_historic_content {
   background-color: var(--white-color);
   border-radius: var(--border-radius-sm);
-  padding: 20px;
+  padding: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2286,7 +2286,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 .container_historic_content .order_tab img {
   cursor: pointer;
@@ -2298,13 +2298,13 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 8px 0;
+  padding: 0.5rem 0;
 }
 .container_historic_content .payment_container .payment_label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5px;
+  gap: 0.3125rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2312,15 +2312,15 @@ h1 {
 .container_historic_content .payment_container .payment_label p {
   font-size: var(--font-size-xxs);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   font-weight: var(--font-bold);
 }
 .container_historic_content .payment_container .payment_label img {
-  height: 20px;
-  width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 .container_historic_content .payment_container .payment_details {
-  width: 150px;
+  width: 9.375rem;
   text-align: end;
 }
 .container_historic_content .payment_container .payment_details p {
@@ -2334,17 +2334,17 @@ h1 {
   color: var(--neutral-low-light-color);
   font-size: var(--font-size-xs);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 .container_historic_content .order_products .products-list {
-  padding: 20px 0;
+  padding: 1.25rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .setting_title {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 .setting_title h1 {
   color: var(--neutral-low-dark-color);
@@ -2358,13 +2358,13 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
-  padding: 50px 0;
+  gap: 1.25rem;
+  padding: 3.125rem 0;
 }
 .settings_list-container .setting_tab {
   background-color: var(--white-color);
   border-radius: var(--border-radius-sm);
-  padding: 24px;
+  padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2377,13 +2377,13 @@ h1 {
 }
 .settings_list-container .setting_tab h4 {
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   font-weight: var(--font-bold);
   color: var(--neutral-low-light-color);
 }
 .settings_list-container .setting_tab img {
-  width: 15px;
-  height: 15px;
+  width: 0.9375rem;
+  height: 0.9375rem;
 }
 
 .pendencies_bar {
@@ -2397,13 +2397,13 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px 100px;
-  height: 100px;
+  padding: 1.875rem 6.25rem;
+  height: 6.25rem;
   position: fixed;
   z-index: 1000;
   width: 100%;
   bottom: 0;
-  border-top: 1px solid var(--neutral-high-medium-color);
+  border-top: 0.0625rem solid var(--neutral-high-medium-color);
 }
 .pendencies_bar .pendencies_container span {
   color: var(--neutral-high-dark-color);

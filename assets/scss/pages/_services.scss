@@ -22,8 +22,8 @@
   .service_item-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 10px;
+    gap: rem(10);
+    padding: rem(10);
 
     .card_description-container {
       p {
@@ -56,7 +56,7 @@
     }
 
     button {
-      border: 2px solid var(--neutral-low-color);
+      border: rem(2) solid var(--neutral-low-color);
       margin: 0 auto;
       display: flex;
       justify-content: center;
@@ -76,23 +76,23 @@
 .display {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 20px;
+  gap: rem(20);
   
   .sidebar {
     position: relative;
-    top: 107px;
+    top: rem(107);
   }
 }
 
 .services-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: rem(10);
 }
 .services_container {
   
   .service_title-container {
-    padding: 30px 0;
+    padding: rem(30) 0;
     .service_title {
       font-size: var(--font-size-lg);
     }

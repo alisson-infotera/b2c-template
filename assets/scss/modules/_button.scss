@@ -36,7 +36,7 @@ Button
   }
 
   &.btn-border-bottom {
-    border-bottom: 1px solid var(--black-color);
+    border-bottom: rem(1) solid var(--black-color);
     border-radius: 0;
   }
 
@@ -75,32 +75,32 @@ Button
   }
 
   &.btn-letter-spacing {
-    letter-spacing: 1px;
+    letter-spacing: rem(1);
     font-weight: var(--font-medium);
   }
 
   &.button_continue_checkout {
     display: flex;
     width: 100%;
-    border: 1px solid var(--neutral-low-color);
+    border: rem(1) solid var(--neutral-low-color);
     border-radius: var(--border-radius-sm);
     align-items: center;
     justify-content: center;
     &:hover {
       font-weight: var(--font-bold);
-      border-width: 2px;
+      border-width: rem(2);
     }
   }
 
   &.btn-social-medias {
-    padding: 10px 20px;
-    width: 200px;
+    padding: rem(10) rem(20);
+    width: rem(200);
     border-radius: 0;
-    height: 40px;
+    height: rem(40);
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 5px;
+    gap: rem(5);
     text-transform: capitalize;
     font-weight: var(--font-regular);
     font-size: var(--font-size-xxxs);
@@ -129,7 +129,7 @@ Button
     &.local_account-button {
       background-color: var(--white-color);
       color: var(--black-color);
-      border: solid 1px var(--black-color);
+      border: solid rem(1) var(--black-color);
       justify-content: center;
     }
   }

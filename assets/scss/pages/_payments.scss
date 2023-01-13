@@ -1,20 +1,20 @@
 .payment_item-content {
-  padding: 0 0 0 10px;
+  padding: 0 0 0 rem(10);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: rem(10);
 
   .payment_item-field {
-    border: solid 1px var(--neutral-high-color);
+    border: solid rem(1) var(--neutral-high-color);
     border-radius: var(--border-radius-sm);
-    padding: 12px 20px;
+    padding: rem(12) rem(20);
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: rem(15);
 
     img {
-      height: 20px;
-      width: 20px;
+      height: rem(20);
+      width: rem(20);
     }
 
     .input_field {
@@ -25,7 +25,7 @@
         font-size: var(--font-size-xxs);
         color: var(--neutral-low-light-color);
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: rem(1);
         font-weight: var(--font-bold);
       }
 
@@ -39,18 +39,18 @@
 .payment_item-footer {
   display: flex;
   justify-content: space-between;
-  padding: 12px 15px;
+  padding: rem(12) rem(15);
   align-items: center;
-  border-bottom: 1px solid var(--neutral-high-dark-color);
-  margin-bottom: 12px;
+  border-bottom: rem(1) solid var(--neutral-high-dark-color);
+  margin-bottom: rem(12);
 }
 
 .login_buttons-container {
   display: flex;
-  width: 450px;
+  width: rem(450);
   margin: 0 auto;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: rem(10);
   justify-content: center;
   align-items: center;
 }
@@ -59,16 +59,16 @@
 .booking_item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: rem(10);
 
   .booking_item-header {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: rem(5);
 
     p {
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: rem(1);
       font-size: var(--font-size-xs);
       font-weight: var(--font-bold);
       color: var(--neutral-low-light-color);
@@ -78,9 +78,9 @@
   .booking_item-content {
     background-color: var(--neutral-high-light-color);
     border-radius: var(--border-radius-sm);
-    padding: 20px;
+    padding: rem(20);
     display: grid;
-    gap: 5px;
+    gap: rem(5);
     
     h4 {
       color: var(--neutral-low-dark-color);
@@ -91,11 +91,11 @@
     .item_detail {
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: rem(5);
 
       img {
-        width: 14px;
-        height: 14px;
+        width: rem(14);
+        height: rem(14);
       }
 
       p {
@@ -109,7 +109,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 5px;
+    margin-top: rem(5);
     .detail_price-container {
       p {
         color: var(--neutral-high-dark-color);
