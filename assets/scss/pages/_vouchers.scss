@@ -28,6 +28,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: rem(30);
+
+  // &.opacity-semiopaque {
+  //   a {
+  //     opacity: var(--opacity-semiopaque) !important;
+  //   }
+  // }
 }
 
 .voucher_item {

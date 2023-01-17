@@ -10,7 +10,7 @@
 
 // 2 - Import modules
 @import 'modules/button';
-@import 'modules/media-queries';
+
 
 // 3 - Import pages
 @import 'pages/home';
@@ -25,3 +25,5 @@
 @import 'pages/voucher';
 @import 'pages/historic';
 @import 'pages/settings';
+
+@import 'modules/media-queries';
