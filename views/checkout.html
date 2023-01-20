@@ -9,11 +9,15 @@
   
   <link rel="stylesheet" href="../assets/css/styles.min.css">
 </head>
-<body>
+<body class="page-checkout">
   <header class="header-dark">
     <a href="../index.html" class="icon_container">
       <img src="../assets/images/favicon.svg" alt="Logo Infotera">
     </a>
+
+    <div class="responsive_title">
+      <p>Meu Pedido</p>
+    </div>
 
     <div class="header_motor_search">
       <div class="input_field">
@@ -35,7 +39,9 @@
         <img src="../assets/images/down-arrow-1.svg" alt="">
       </div>
 
-      <button><img src="../assets/images/search.svg" alt=""></button>
+      <button>
+        <img src="../assets/images/search.svg" alt="">
+      </button>
     </div>
 
     <div class="navgation_container">
@@ -44,13 +50,13 @@
           <li>
             <a href="#">
               <img src="../assets/images/users.svg" alt="">
-              FAZER LOGIN
+              <span>FAZER LOGIN</span>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="../assets/images/cart.svg" alt="">
-              PEDIDO
+              <span>PEDIDO</span>
             </a>
           </li>
         </ul>
@@ -59,12 +65,14 @@
   </header>
   <div class="container">
     <div class="checkout-page">
-      <h1>Meu Pedido</h1>
+      <div class="checkout_title-container">  
+        <h1>Meu Pedido</h1>
+      </div>
       
       <div class="checkout-container">
         <div class="booking_list">
           <div class="booking_item">
-            <div class="">
+            <div class="item">
               <div class="booking_item-header">
                 <div class="booking_item-label">
                   <img src="../assets/images/Building.svg" alt="">
@@ -103,9 +111,6 @@
                   <img src="../assets/images/Trash.svg" alt="">
                 </button>
               </div>
-            </div>
-    
-            <div class="">
               <div class="booking_item-content">
                 <div class="booking_item-image">
                   <img src="../assets/images/312846914-p-500.jpg" alt="">
@@ -137,7 +142,7 @@
           </div>
 
           <div class="booking_item">
-            <div class="">
+            <div class="item">
               <div class="booking_item-header">
                 <div class="booking_item-label">
                   <img src="../assets/images/car.svg" alt="">
@@ -192,7 +197,7 @@
             </div>
           </div>
           
-          <div class="">
+          <div>
             <button class="button_continue_checkout btn btn-letter-spacing">Seguir comprando</button>
           </div>
         </div>
@@ -207,7 +212,7 @@
             </div>
             <div>
               <a class="btn_action" href="./payments.html">
-                Seguir para pagamento
+                Ir para pagamento
                 <img src="../assets/images/arrow-wht.svg" alt="">
               </a>
             </div>

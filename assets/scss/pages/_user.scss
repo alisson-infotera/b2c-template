@@ -8,7 +8,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: rem(10);
-  padding-top: rem(20);
+  padding: rem(20) 0;
 
   .user_item {
     display: flex;

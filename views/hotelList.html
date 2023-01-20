@@ -9,48 +9,65 @@
 
   <link rel="stylesheet" href="../assets/css/styles.min.css">
 </head>
-  <body>
-    <header class="header-dark">
+  <body class="page-hotelList">
+    <header class="header-dark header-services">
       <a href="../index.html" class="icon_container">
         <img src="../assets/images/favicon.svg" alt="Logo Infotera">
+        <p>Infotera</p>
       </a>
-
-      <div class="header_motor_search">
+  
+      <div class="header_motor_search desktop">
         <div class="input_field">
           <input type="text" value="hotel + aéreo">
         </div>
+        <div class="input_field">
+          <img src="../assets/images/calendar.svg" alt="">
+          <input class="custom-width-input" type="text" value="15 Nov - 25 nov">
+          <img src="../assets/images/down-arrow-1.svg" alt="">
+        </div>
+        <div class="input_field">
+          <img src="../assets/images/users-black.svg" alt="">
+          <input class="custom-width-input" type="text" value="3 Hósp., 1 Quarto">
+          <img src="../assets/images/down-arrow-1.svg" alt="">
+        </div>
+        <div class="input_field">
+          <img src="../assets/images/Plane.svg" alt="">
+          <input class="custom-width-input" type="text" value="POA - GRU">
+          <img src="../assets/images/down-arrow-1.svg" alt="">
+        </div>
+  
+        <button>
+          <img src="../assets/images/search.svg" alt="">
+        </button>
+      </div>
+  
+      <div class="header_motor_search mobile">
+        <button>
+          <img src="../assets/images/Research.svg" alt="">
+        </button>
         <div class="input_field ">
           <img src="../assets/images/calendar.svg" alt="">
           <input class="custom-width-input" type="text" value="15 Nov - 25 nov">
           <img src="../assets/images/down-arrow-1.svg" alt="">
         </div>
-        <div class="input_field ">
-          <img src="../assets/images/users-black.svg" alt="">
-          <input class="custom-width-input" type="text" value="3 Hósp., 1 Quarto">
-          <img src="../assets/images/down-arrow-1.svg" alt="">
-        </div>
-        <div class="input_field ">
-          <img src="../assets/images/Plane.svg" alt="">
-          <input class="custom-width-input" type="text" value="POA - GRU">
-          <img src="../assets/images/down-arrow-1.svg" alt="">
-        </div>
-
-        <button class="btn"><img src="../assets/images/search.svg" alt=""></button>
+  
+        <button class="btn-filters-mobile">
+          <img src="../assets/images/Filters.svg" alt="">
+        </button>
       </div>
-
       <div class="navgation_container">
         <nav>
           <ul>
             <li>
               <a href="#">
-                <img src="../assets/images/users.svg" alt="">
-                FAZER LOGIN
+                <img src="../assets/images/user-login.svg" alt="">
+                <span>FAZER LOGIN</span>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src="../assets/images/cart.svg" alt="">
-                PEDIDO
+                <span>PEDIDO</span>
               </a>
             </li>
           </ul>
@@ -62,7 +79,10 @@
         <h1>Resultados da sua pesquisa</h1>
       </div>
       <div class="order_filters-container">
-        <p>Ordenar por:</p>
+        <div class="p-order">
+          <p>Ordenar por:</p>
+        </div>
+        
         <div class="order_filter_item-container">
           <div class="order_filter_item"><p>Mais Barato</p></div>
           <div class="order_filter_item"><p>Mais Caros</p></div>

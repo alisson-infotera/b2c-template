@@ -6,7 +6,10 @@
     font-size: var(--font-size-xxl);
   }
 }
-
+.item {
+  display: grid;
+  gap: 10px;
+}
 .checkout-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -118,7 +121,7 @@
     padding: rem(20);
     display: grid;
     gap: rem(20);
-    width: 75%;
+    width: 85%;
 
     h3 {
       font-size: var(--font-size-md);

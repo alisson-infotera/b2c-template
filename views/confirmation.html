@@ -9,11 +9,15 @@
   
   <link rel="stylesheet" href="../assets/css/styles.min.css">
 </head>
-<body>
+<body class="page-confirmation">
   <header class="header-dark">
     <a href="../index.html" class="icon_container">
       <img src="../assets/images/favicon.svg" alt="Logo Infotera">
     </a>
+
+    <div class="responsive_title">
+      <p>Confirmação</p>
+    </div>
 
     <div class="header_motor_search">
       <div class="input_field">
@@ -35,7 +39,9 @@
         <img src="../assets/images/down-arrow-1.svg" alt="">
       </div>
 
-      <button><img src="../assets/images/search.svg" alt=""></button>
+      <button>
+        <img src="../assets/images/search.svg" alt="">
+      </button>
     </div>
 
     <div class="navgation_container">
@@ -43,20 +49,21 @@
         <ul>
           <li>
             <a href="#">
-              <img src="../assets/images/users.svg" alt="">
-              FAZER LOGIN
+              <img src="../assets/images/user-login.svg" alt="">
+              <span>FAZER LOGIN</span>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="../assets/images/cart.svg" alt="">
-              PEDIDO
+              <span>PEDIDO</span>
             </a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
+
   <div class="container">
     <div class="checkout-page">      
       <div class="checkout-container">
@@ -66,6 +73,17 @@
             <div>
               <h3>Sua compra foi realizada com sucesso</h3>
               <p>Confira um resumo da sua compra</p>
+            </div>
+          </div>
+
+          <h3 class="oreder_label">Pedido #1234</h3>
+          <div class="booking_payment-item">
+            <div class="label_payment_item">
+              <img src="../assets/images/front_card.svg" alt="">
+              <p>data da compra</p>
+            </div>
+            <div class="form_payment">
+              <p>13/08/2022 - 13h35</p>
             </div>
           </div>
 
@@ -133,12 +151,15 @@
               <p>Total do pedido</p>
               <p class="price_text">R$ <b>1.980,89</b></p>
             </div>
-            <div>
+            <!-- <div>
               <a class="btn_action disabled" href="">
                 Finalizar compra
                 <img src="../assets/images/arrow-wht.svg" alt="">
               </a>
-            </div>
+            </div> -->
+          </div>
+          <div>
+            <a href="../index.html" style="width: 100%;" class="button_continue_checkout btn btn-letter-spacing">Voltar para home</a>
           </div>
         </div>
       </div>

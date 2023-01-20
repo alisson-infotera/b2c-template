@@ -9,33 +9,39 @@
   
   <link rel="stylesheet" href="../assets/css/styles.min.css">
 </head>
-<body>
+<body class="page-payments">
   <header class="header-dark">
     <a href="../index.html" class="icon_container">
       <img src="../assets/images/favicon.svg" alt="Logo Infotera">
     </a>
 
+    <div class="responsive_title">
+      <p>Checkout</p>
+    </div>
+
     <div class="header_motor_search">
       <div class="input_field">
         <input type="text" value="hotel + aéreo">
       </div>
-      <div class="input_field ">
+      <div class="input_field">
         <img src="../assets/images/calendar.svg" alt="">
         <input class="custom-width-input" type="text" value="15 Nov - 25 nov">
         <img src="../assets/images/down-arrow-1.svg" alt="">
       </div>
-      <div class="input_field ">
+      <div class="input_field">
         <img src="../assets/images/users-black.svg" alt="">
         <input class="custom-width-input" type="text" value="3 Hósp., 1 Quarto">
         <img src="../assets/images/down-arrow-1.svg" alt="">
       </div>
-      <div class="input_field ">
+      <div class="input_field">
         <img src="../assets/images/Plane.svg" alt="">
         <input class="custom-width-input" type="text" value="POA - GRU">
         <img src="../assets/images/down-arrow-1.svg" alt="">
       </div>
 
-      <button><img src="../assets/images/search.svg" alt=""></button>
+      <button>
+        <img src="../assets/images/search.svg" alt="">
+      </button>
     </div>
 
     <div class="navgation_container">
@@ -43,14 +49,14 @@
         <ul>
           <li>
             <a href="#">
-              <img src="../assets/images/users.svg" alt="">
-              FAZER LOGIN
+              <img src="../assets/images/user-login.svg" alt="">
+              <span>FAZER LOGIN</span>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="../assets/images/cart.svg" alt="">
-              PEDIDO
+              <span>PEDIDO</span>
             </a>
           </li>
         </ul>
@@ -59,12 +65,15 @@
   </header>
   <div class="container">
     <div class="checkout-page">
-      <h1>Finalização da compra</h1>
+      <div class="checkout-title">
+        <h1>Finalização da compra</h1>
+      </div>
+      
       
       <div class="checkout-container">
         <div class="booking_list">
           <div class="booking_item">
-            <div class="">
+            <div class="item">
               <div class="booking_item-header">
                 <div class="booking_item-label">
                   <p id="teste">01. Login</p>
@@ -152,10 +161,10 @@
           </div>
         </div>
 
-        <div class="checkout_total_price-container">
-          <h3>Seu pedido</h3>
+        <div class="checkout_total_price-container booking_item-hide">
+          <h3 class="hide-responsive">Seu pedido</h3>
 
-          <div class="booking_item">
+          <div class="booking_item hide-responsive">
             <div class="booking_item-header">
               <img src="../assets/images/building-gray.svg" alt="">
               <p>hospedagem</p>

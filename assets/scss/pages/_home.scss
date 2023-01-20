@@ -19,46 +19,6 @@ body {
   position: relative;
 }
 
-header {
-  height: rem(100);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 rem(64);
-
-  .icon_container {
-    img {
-      height: rem(54);
-      width: rem(54);
-    }
-  }
-  
-  nav {
-    ul {
-      display: flex;
-      gap: rem(30);
-
-      li {
-        padding: rem(10);
-
-        a {
-          display: flex;
-          gap: rem(10);
-          color: var(--white-color);
-          gap: rem(10);
-          font-size: var(--font-size-xxs);
-          line-height: var(--line-height-sm);
-          font-weight: var(--font-bold);
-          transition: .4s;
-
-          &:hover {
-            opacity: var(--opacity-semiopaque);
-          }
-        }
-      }
-    }
-  } 
-}
 
 .motor_search {
   background-color: var(--white-color);
@@ -196,6 +156,10 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 0 rem(30);
+
+    .filter_title-container {
+      display: none;
+    }
   }
 }
 
