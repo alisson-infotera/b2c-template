@@ -172,6 +172,12 @@ header nav ul li a {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+header nav ul li a img.desktop-image {
+  display: block;
+}
+header nav ul li a img.responsive-image {
+  display: none;
+}
 header nav ul li a:hover {
   opacity: var(--opacity-semiopaque);
 }
@@ -227,10 +233,22 @@ header.header-dark .header_motor_search button {
 
 @media (max-width: 575px) {
   header {
-    display: none;
+    color: var(--black-color) !important;
     padding: 0 1.25rem;
     position: relative;
     width: 100vw;
+  }
+  header.header-home img {
+    display: none;
+  }
+  header.header-home .navgation_container nav ul li a {
+    color: var(--neutral-low-color);
+  }
+  header.header-home .navgation_container nav ul li a img.desktop-image {
+    display: none;
+  }
+  header.header-home .navgation_container nav ul li a img.responsive-image {
+    display: block;
   }
   header.header-dark {
     display: -webkit-box;
@@ -317,6 +335,9 @@ header.header-dark .header_motor_search button {
     gap: 5px !important;
   }
   header .navgation_container a span {
+    display: none;
+  }
+  header.header-hide-responsive {
     display: none;
   }
 }
@@ -1035,7 +1056,9 @@ body {
   text-transform: uppercase;
 }
 .container_content .filters-container .filters-content .graphic {
+  width: 100%;
   height: 9.375rem;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2117,6 +2140,65 @@ body {
   font-size: var(--font-size-lg);
 }
 
+.search_options-container {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  padding: 0.75rem 0;
+  width: 100%;
+  overflow: scroll;
+  margin-top: 0.625rem;
+}
+.search_options-container .search_options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.3125rem;
+  background-color: var(--neutral-high-medium-color);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: var(--border-radius-lg);
+  padding: 0.1875rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.search_options-container .search_options a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.3125rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 0.75rem;
+  background-color: transparent;
+  border-radius: var(--border-radius-lg);
+  font-size: var(--font-size-xxs);
+  font-weight: var(--font-bold);
+  color: var(--neutral-high-dark-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.search_options-container .search_options a.current {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+.search_options-container .search_options a:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+.search_options-container .search_options a img {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
 h1 {
   font-weight: var(--font-extrabold);
   font-size: var(--font-size-xxl);
@@ -2585,6 +2667,11 @@ Media Querys Mobile
   body.page-settings .pendencies_bar .pendencies_container p {
     font-size: var(--font-size-xxs);
   }
+  body.page-services .search_options-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   body.page-services .display {
     padding-bottom: 20px;
   }
@@ -2598,6 +2685,7 @@ Media Querys Mobile
     display: -ms-flexbox;
     display: flex;
     overflow: scroll;
+    padding: 20px 0;
   }
   body.page-services .container_services .services-container .service_item {
     min-width: 250px;
@@ -2607,6 +2695,9 @@ Media Querys Mobile
   }
   body.page-services .container_services .services-container .service_item .card-boardType p {
     font-weight: var(--font-medium);
+  }
+  body.page-services .service_title-container {
+    display: none;
   }
   body.page-services .service_title-container .service_title {
     font-size: var(--font-size-xs);
@@ -2915,6 +3006,65 @@ Media Querys Mobile
   }
   body.page-hotelList .filters-container {
     display: none;
+  }
+  body.page-detailHotel .sidebar-container {
+    display: none;
+  }
+  body.page-detailHotel .description-container {
+    padding: 1rem;
+  }
+  body.page-detailHotel .description-container .detail_container h1 {
+    font-size: var(--font-size-sm);
+  }
+  body.page-detailHotel .description-container .detail_container p.detail_description {
+    font-size: var(--font-size-xxxs);
+    line-height: var(--line-height-md);
+  }
+  body.page-detailHotel .hotel_details-container p {
+    font-size: var(--font-size-xxxs);
+    line-height: var(--line-height-md);
+  }
+  body.page-detailHotel .hotel_detail-container {
+    width: 100vw;
+  }
+  body.page-detailHotel .hotel_detail-container .type-room-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    border-radius: var(--border-radius-sm);
+  }
+  body.page-detailHotel .hotel_detail-container .type_room-content {
+    padding: 0;
+    gap: 1rem;
+  }
+  body.page-detailHotel .hotel_detail-container .type_room-content .type_room-image {
+    width: 100%;
+  }
+  body.page-detailHotel .hotel_detail-container .type_room-content .type_room-details {
+    padding: 10px 0;
+  }
+  body.page-detailHotel .hotel_detail-container .type_room-content .type_room-details .item_content-container .select_button-container {
+    bottom: 10%;
+  }
+  body.page-detailHotel .hotel_detail-container .type_room-content .type_room-details .item_content-container .description_container .room_type_facilities-container {
+    grid-template-columns: 1fr;
+  }
+  body.page-detailHotel .hotel_detail-container .type_room-content .type_room-details .item_content-container .description_container h3 {
+    font-size: var(--font-size-xs);
+  }
+  body.page-detailHotel .hotel_detail-container .type_room-content .type_room-details .item_content-container .description_container p.detail_description {
+    font-size: var(--font-size-xxxs);
+  }
+  body.page-detailHotel .hotel_detail-container .type_room-content .type_room-details .item_content-container .type_room_price-container {
+    gap: 0;
+  }
+  body.page-detailHotel .hotel_detail-container .type_room-content .type_room-details .item_content-container .type_room_price-container p.label {
+    font-size: var(--font-size-xxxs);
+  }
+  body.page-detailHotel .hotel_detail-container .type_room-content .type_room-details .item_content-container .type_room_price-container p.type_room-price span {
+    font-size: var(--font-size-sm);
   }
   body.page-detailHotel .container {
     width: 100%;

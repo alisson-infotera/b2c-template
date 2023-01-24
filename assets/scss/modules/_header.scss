@@ -8,11 +8,6 @@ header {
   position: relative;
   top: 0;
 
-  &.header-services {
-    
-
-  }
-
   .responsive_title {
     display: none;
   }
@@ -46,6 +41,15 @@ header {
           font-weight: var(--font-bold);
           transition: .4s;
 
+          img {
+
+            &.desktop-image {
+              display: block;
+            }
+            &.responsive-image {
+              display: none;
+            }
+          }
           &:hover {
             opacity: var(--opacity-semiopaque);
           }
@@ -98,7 +102,35 @@ header {
 
 @media (max-width: 575px) {
   header {
-    display: none;
+    // display: none;
+    &.header-home {
+      img {
+        display: none;
+      }
+      .navgation_container {
+
+        nav {
+          ul {
+            li {
+              a {
+                color: var(--neutral-low-color);
+
+                img {
+
+                  &.desktop-image {
+                    display: none;
+                  }
+                  &.responsive-image {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    color: var(--black-color) !important;
     padding: 0 rem(20);
     position: relative;
     width: 100vw;
@@ -153,8 +185,6 @@ header {
               border-radius: 50%;
             }
           }
-
-
         }
       }
     }
@@ -204,5 +234,9 @@ header {
     // &.header-dark {
     //   display: flex !important;
     // }
+
+    &.header-hide-responsive {
+      display: none;
+    }
   }
 }

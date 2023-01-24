@@ -134,9 +134,15 @@ Media Querys Mobile
     }
 
     &.page-services {
+
+      .search_options-container {
+        display: flex;
+      }
+      
       .display {
         padding-bottom: 20px;
       }
+
       .container_services {
         width: 90vw;
         overflow: scroll;
@@ -145,11 +151,13 @@ Media Querys Mobile
           width: 100%;
           display: flex;
           overflow: scroll;
-  
+          padding: 20px 0;
+
           .service_item {
             min-width: 250px;
   
             .evaluation_notes-container {
+
               .label {
                 font-size: var(--font-size-xxxs);
               }
@@ -165,6 +173,7 @@ Media Querys Mobile
       }
 
       .service_title-container {
+        display: none;
 
         .service_title {
           font-size: var(--font-size-xs);
@@ -601,9 +610,106 @@ Media Querys Mobile
     }
 
     &.page-detailHotel {
+
+      .sidebar-container {
+        display: none;
+      }
+
+      .description-container {
+        padding: rem(16);
+        .detail_container {
+          h1 {
+            font-size: var(--font-size-sm);
+          }
+
+          p {
+            &.detail_description {
+              font-size: var(--font-size-xxxs);
+              line-height: var(--line-height-md);
+            }
+          }
+        }
+      }
+
+      .hotel_details-container {
+        p {
+          font-size: var(--font-size-xxxs);
+          line-height: var(--line-height-md);
+        }
+      }
+
+      .hotel_detail-container {
+        width: 100vw;
+
+        .type-room-item {
+          flex-direction: column;
+          background-color: #fff;
+          border-radius: var(--border-radius-sm);
+        }
+
+        .type_room-content {
+          padding: 0;
+          gap: rem(16);
+
+          .type_room-image {
+            width: 100%;
+          }
+
+          .type_room-details {
+            padding: 10px 0;
+
+            .item_content-container {
+
+              .select_button-container {
+                bottom: 10%;
+              }
+
+              .description_container {
+                .room_type_facilities-container {
+                  grid-template-columns: 1fr;
+                }
+
+                h3 {
+                  font-size: var(--font-size-xs);
+                }
+
+                p {
+                  &.detail_description {
+                    font-size: var(--font-size-xxxs);
+                  }
+                }
+              }
+
+              .type_room_price-container {
+                gap: 0;
+
+                p {
+
+                  &.label {
+                    font-size: var(--font-size-xxxs);
+                  }
+                  
+                  &.type_room-price {
+
+                    span {
+
+                      font-size: var(--font-size-sm);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.page-detailHotel {
+
       .container {
         width: 100%;
       }
+
       .image-container {
         display: flex;
         overflow: scroll;
@@ -611,6 +717,7 @@ Media Querys Mobile
       }
 
       .image-container {
+        
         img:not(:nth-child(1)) {
           display: none;
         }
